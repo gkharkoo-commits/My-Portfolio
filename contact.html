@@ -1069,106 +1069,92 @@
           flex-wrap: wrap;
         }
       }
-      /* ── 320px & SMALL DEVICES RESPONSIVE FIXES ── */
-@media (max-width: 300px) {
-    /* مجموعی پیڈنگ کو مزید کم کرنا */
+/* ── 320px RESPONSIVE FIXES ── */
+@media (max-width: 400px) {
+    /* پیڈنگ کم کرنا تاکہ جگہ بچے */
     .page-width {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .page-hero {
-        padding: 80px 10px 20px;
+        padding: 100px 15px 30px;
         min-height: auto;
     }
 
-    /* ٹائٹل سائز کو مزید چھوٹا کرنا تاکہ لائن بریک نہ ہو */
+    /* ٹائٹل سائز کو چھوٹا کرنا */
     .page-title {
-        font-size: 1.5rem !important;
-        letter-spacing: -0.5px;
+        font-size: 1.8rem !important;
+        line-height: 1.2;
     }
 
-    /* کانٹیکٹ کارڈز کو اسٹیک (Stack) کرنا اگر جگہ کم ہو */
+    /* کانٹیکٹ کارڈز کو درست کرنا */
     .contact-card {
-        padding: 12px 10px;
-        gap: 8px;
-        flex-direction: column; /* آئیکن اور ٹیکسٹ کو اوپر نیچے کرنا */
-        text-align: center;
+        padding: 15px;
+        gap: 10px;
     }
 
     .cc-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 16px;
-        margin: 0 auto;
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
     }
 
     .cc-val {
-        font-size: 11px;
-        word-break: break-all; /* لمبی ای میلز کو ٹوٹنے سے بچانا */
+        font-size: 13px;
     }
 
-    /* فارم کنٹینر */
+    /* فارم کے اندرونی حصوں کو سیٹ کرنا */
     .contact-form-wrap {
-        padding: 15px 10px;
-    }
-
-    /* ٹیبز کو ریپ (Wrap) کرنا تاکہ وہ اسکرین سے باہر نہ جائیں */
-    .form-tabs {
-        gap: 4px;
-        flex-wrap: wrap; /* اگر جگہ کم ہو تو ٹیب نیچے آ جائے */
+        padding: 20px 15px;
     }
 
     .form-tab {
-        padding: 5px 8px;
-        font-size: 9px;
-        flex: 1 1 45%; /* ایک لائن میں دو ٹیبز دکھانے کے لیے */
-    }
-
-    /* بجٹ چپس کو گرڈ میں سیٹ کرنا */
-    .budget-chips {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* دو کالمز بنانا */
-        gap: 6px;
-    }
-
-    .budget-chip {
-        padding: 6px 4px;
-        font-size: 9px;
+        padding: 6px 12px;
+        font-size: 10px;
+        flex: 1 1 auto; /* ٹیبز کو ایک لائن میں ایڈجسٹ کرنا */
         text-align: center;
     }
 
-    /* ان پٹ فیلڈز کو چھوٹا کرنا */
-    input, textarea {
-        font-size: 14px !important; /* زوم روکنے کے لیے کم از کم 14-16px بہتر ہے */
-        padding: 10px !important;
+    .form-tabs {
+        gap: 5px;
+    }
+
+    /* بجٹ چپس (Budget Chips) کو چھوٹا کرنا */
+    .budget-chip {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    /* بٹن کو مکمل چوڑائی دینا */
+    .submit-btn {
+        font-size: 14px;
+        padding: 12px;
     }
 
     /* FAQ سیکشن */
     .faq-q {
-        font-size: 12px;
-        padding: 12px 10px;
+        font-size: 13px;
+        padding: 15px;
     }
 
-    /* باٹم نیویگیشن کو فکس کرنا */
+    /* باٹم نیویگیشن (Bottom Nav) کو چھوٹا کرنا تاکہ بٹن غائب نہ ہوں */
     .bottom-nav {
-        width: 95%;
-        bottom: 10px;
-        padding: 5px;
+        width: 90%;
+        padding: 6px 10px;
+        gap: 2px;
     }
 
     .bottom-nav a {
-        padding: 4px 6px;
-        font-size: 8px;
-        flex-direction: column; /* آئیکن اور ٹیکسٹ کو اوپر نیچے کرنا */
+        padding: 5px 8px;
+        font-size: 9px;
     }
 
     .bottom-nav a svg {
-        width: 14px;
-        height: 14px;
-        margin-bottom: 2px;
+        width: 16px;
+        height: 16px;
     }
-
 }
+
     </style>
   </head>
   <body>
