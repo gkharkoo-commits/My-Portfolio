@@ -1308,7 +1308,7 @@
           text-align: center;
         }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 990px) {
         #hero {
           padding: 90px 24px 70px;
         }
@@ -1324,6 +1324,126 @@
           display: none;
         }
       }
+      @media (max-width: 368px) {
+ /* ===== MOBILE + SCROLL FULL FIX ===== */
+
+/* 1. GLOBAL RESET (no horizontal scroll) */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2. SAFE WIDTHS */
+* {
+  box-sizing: border-box;
+}
+
+.page-width,
+.contact-form-wrap,
+.contact-card,
+header,
+footer,
+section,
+div {
+  max-width: 100%;
+}
+
+/* 3. HERO ORBS FIX (important) */
+.page-hero {
+  overflow: hidden;
+}
+.orb {
+  max-width: 100%;
+}
+
+/* 4. EXTRA SMALL DEVICES (320px) */
+
+
+  .page-width {
+    padding: 0 14px;
+  }
+
+  header {
+    padding: 12px 14px;
+  }
+
+  .page-hero {
+    padding: 90px 14px 30px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  .contact-form-wrap {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .contact-card {
+    padding: 16px;
+    gap: 7px;
+  }
+
+  .cc-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .faq-q {
+    font-size: 13px;
+    padding: 14px;
+  }
+
+  footer {
+    padding: 24px 14px;
+    font-size: 12px;
+  }
+
+  /* bottom nav fix */
+  .bottom-nav {
+    padding: 6px 10px;
+    gap: 2px;
+  }
+
+  .bottom-nav a {
+    padding: 4px 8px;
+    font-size: 9px;
+  }
+
+  .bottom-nav a svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
     </style>
   </head>
   <body>
