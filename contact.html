@@ -1069,6 +1069,105 @@
           flex-wrap: wrap;
         }
       }
+      /* ── 320px & SMALL DEVICES RESPONSIVE FIXES ── */
+@media (max-width: 320px) {
+    /* مجموعی پیڈنگ کو مزید کم کرنا */
+    .page-width {
+        padding: 0 10px;
+    }
+
+    .page-hero {
+        padding: 80px 10px 20px;
+        min-height: auto;
+    }
+
+    /* ٹائٹل سائز کو مزید چھوٹا کرنا تاکہ لائن بریک نہ ہو */
+    .page-title {
+        font-size: 1.5rem !important;
+        letter-spacing: -0.5px;
+    }
+
+    /* کانٹیکٹ کارڈز کو اسٹیک (Stack) کرنا اگر جگہ کم ہو */
+    .contact-card {
+        padding: 12px 10px;
+        gap: 8px;
+        flex-direction: column; /* آئیکن اور ٹیکسٹ کو اوپر نیچے کرنا */
+        text-align: center;
+    }
+
+    .cc-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .cc-val {
+        font-size: 11px;
+        word-break: break-all; /* لمبی ای میلز کو ٹوٹنے سے بچانا */
+    }
+
+    /* فارم کنٹینر */
+    .contact-form-wrap {
+        padding: 15px 10px;
+    }
+
+    /* ٹیبز کو ریپ (Wrap) کرنا تاکہ وہ اسکرین سے باہر نہ جائیں */
+    .form-tabs {
+        gap: 4px;
+        flex-wrap: wrap; /* اگر جگہ کم ہو تو ٹیب نیچے آ جائے */
+    }
+
+    .form-tab {
+        padding: 5px 8px;
+        font-size: 9px;
+        flex: 1 1 45%; /* ایک لائن میں دو ٹیبز دکھانے کے لیے */
+    }
+
+    /* بجٹ چپس کو گرڈ میں سیٹ کرنا */
+    .budget-chips {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* دو کالمز بنانا */
+        gap: 6px;
+    }
+
+    .budget-chip {
+        padding: 6px 4px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    /* ان پٹ فیلڈز کو چھوٹا کرنا */
+    input, textarea {
+        font-size: 14px !important; /* زوم روکنے کے لیے کم از کم 14-16px بہتر ہے */
+        padding: 10px !important;
+    }
+
+    /* FAQ سیکشن */
+    .faq-q {
+        font-size: 12px;
+        padding: 12px 10px;
+    }
+
+    /* باٹم نیویگیشن کو فکس کرنا */
+    .bottom-nav {
+        width: 95%;
+        bottom: 10px;
+        padding: 5px;
+    }
+
+    .bottom-nav a {
+        padding: 4px 6px;
+        font-size: 8px;
+        flex-direction: column; /* آئیکن اور ٹیکسٹ کو اوپر نیچے کرنا */
+    }
+
+    .bottom-nav a svg {
+        width: 14px;
+        height: 14px;
+        margin-bottom: 2px;
+    }
+}
     </style>
   </head>
   <body>
