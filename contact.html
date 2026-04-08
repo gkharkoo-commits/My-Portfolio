@@ -1327,7 +1327,11 @@
               <button class="form-tab" data-tab="collab">Collab</button>
             </div>
 
-<form action="https://formspree.io/f/xgopryqo" method="POST" target="_blank">
+<form action="https://api.web3forms.com/submit" method="POST">
+  
+  <!-- Access Key -->
+  <input type="hidden" name="access_key" value="90cda2be-87d6-4f4d-aae8-26d5c2943f67">
+
   <div id="formContent">
     
     <!-- Name + Email -->
@@ -1414,14 +1418,7 @@
     </div>
 
     <!-- Submit -->
-    <button
-      type="submit"
-      class="submit-btn"
-      id="submitBtn"
-    >
-      <svg viewBox="0 0 24 24">
-        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-      </svg>
+    <button type="submit" class="submit-btn" id="submitBtn">
       Send Message
     </button>
 
